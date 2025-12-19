@@ -1,0 +1,198 @@
+/* Container */
+.programs-container {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.programs-container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+/* Grid Layout */
+.programs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Individual Program Card */
+.program-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: left;
+  cursor: pointer;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Title */
+.program-card h3 {
+  font-size: 1.4rem;
+  color: #004aad; /* Ministry blue tone */
+  margin-bottom: 10px;
+}
+
+/* Description */
+.program-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Image Section */
+.program-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.program-card:hover .program-image img {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .programs-container h1 {
+    font-size: 2rem;
+  }
+
+  .program-card {
+    padding: 20px;
+  }
+
+  .program-image img {
+    height: 180px;
+  }
+}
+
+.apply-btn-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.apply-button {
+  display: inline-block;
+  background-color: #ff8c00;
+  color: white;
+  padding: 20px 60px;   /* ⬅ bigger button */
+  font-size: 2rem;      /* ⬅ bigger text */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(255, 140, 0, 0.35);
+}
+
+.apply-button:hover {
+  background-color: #e67e00;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 140, 0, 0.45);
+}
+
+.govt-section {
+    background: #2c3e50;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.govt-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.zambia-flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flag-colors {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.flag-green { width: 80px; height: 20px; background: #047c36; }
+.flag-red { width: 80px; height: 20px; background: #de2010; }
+.flag-black { width: 80px; height: 20px; background: #000000; }
+.flag-orange { width: 80px; height: 20px; background: #ff8c00; }
+
+.govt-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ecf0f1;
+}
+
+.govt-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #bdc3c7;
+}
+
+.center-info {
+    margin: 25px 0;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
+
+.center-info h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.mission-text {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.mission-text p {
+    margin: 8px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .motto {
+        font-size: 1.2rem;
+    }
+    
+    .govt-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

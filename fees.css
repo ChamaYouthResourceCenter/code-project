@@ -1,0 +1,42 @@
+.fees-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.fees-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.fees-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fees-box li {
+  background: #f3f3f3;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.apply-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 40px;
+  background: #ff8c00;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  background: #e67e00;
+}

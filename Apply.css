@@ -1,0 +1,221 @@
+/* Page container */
+.apply-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.apply-container h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #004aad; /* Ministry blue tone */
+}
+
+/* Form container */
+.application-form {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.10);
+  text-align: left;
+}
+
+/* Label styling */
+.application-form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+/* Input + select styling */
+.application-form input,
+.application-form select,
+.application-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fafafa;
+  margin-bottom: 20px;
+  transition: all 0.25s ease;
+}
+
+.application-form input:focus,
+.application-form select:focus,
+.application-form textarea:focus {
+  border-color: #004aad;
+  background: #fff;
+  box-shadow: 0px 0px 6px rgba(0, 74, 173, 0.3);
+  outline: none;
+}
+
+/* ROWS */
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 18px 0;
+  font-size: 1.4rem;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(255, 140, 0, 0.35);
+}
+
+.submit-btn:hover {
+  background-color: #e67e00;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 140, 0, 0.45);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 650px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .apply-container h1 {
+    font-size: 2rem;
+  }
+
+  .application-form {
+    padding: 25px 20px;
+  }
+
+  .submit-btn {
+    font-size: 1.2rem;
+    padding: 15px 0;
+  }
+}
+ 
+.form-message {
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.success-message {
+  background: #c8f7c5;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+}
+
+.error-message {
+  background: #ffdddd;
+  color: #c62828;
+  border: 1px solid #c62828;
+}
+
+
+.govt-section {
+    background: #2c3e50;
+    color: white;
+    padding: 40px;
+    border-radius: 40px;
+    margin: 40px 0;
+    text-align: center;
+    margin: 80px; /* Adds 20px space on all sides */
+
+    
+
+}
+
+.govt-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.zambia-flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flag-colors {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.flag-green { width: 80px; height: 20px; background: #047c36; }
+.flag-red { width: 80px; height: 20px; background: #de2010; }
+.flag-black { width: 80px; height: 20px; background: #000000; }
+.flag-orange { width: 80px; height: 20px; background: #ff8c00; }
+
+.govt-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ecf0f1;
+}
+
+.govt-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #bdc3c7;
+}
+
+.center-info {
+    margin: 25px 0;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
+
+.center-info h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.mission-text {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.mission-text p {
+    margin: 8px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .motto {
+        font-size: 1.2rem;
+    }
+    
+    .govt-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

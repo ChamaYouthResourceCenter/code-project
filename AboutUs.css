@@ -1,0 +1,255 @@
+.about-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  color: #2b2b2b;
+}
+
+.about-container p {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+/* ===========================
+   TWO IMAGES SIDE BY SIDE
+=========================== */
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin: 30px 0;
+}
+
+/* Left image */
+.into-image img {
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: rotate(4deg); /* slight turn toward right */
+  transition: 0.3s ease;
+}
+
+.into-image img:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+/* Right TEVETA image */
+.teveta-image img {
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: rotate(-4deg); /* slight turn toward left */
+  transition: 0.3s ease;
+}
+
+.teveta-image img:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+/* Make it look good on small screens */
+@media (max-width: 768px) {
+  .image-row {
+    flex-direction: column;
+  }
+
+  .into-image img,
+  .teveta-image img {
+    max-width: 100%;
+    transform: none;
+  }
+}
+
+
+/* ===========================
+   MANAGERS SECTION
+=========================== */
+.two-Manager {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.first-Manager,
+.second-manager {
+  background: #fff;
+  padding: 20px;
+  width: 45%;
+  min-width: 260px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.first-Manager:hover,
+.second-manager:hover {
+  transform: translateY(-6px);
+}
+
+.first-Manager img,
+.second-manager img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+.first-Manager h1,
+.second-manager h1 {
+  font-size: 20px;
+  color: #0a3d62;
+}
+
+/* ===========================
+   OUTRO SECTION
+=========================== */
+.Outro-info {
+  margin-top: 40px;
+  background: #f7f7f7;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.govt-section {
+    background: #2c3e50;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.govt-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.zambia-flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flag-colors {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.flag-green { width: 80px; height: 20px; background: #047c36; }
+.flag-red { width: 80px; height: 20px; background: #de2010; }
+.flag-black { width: 80px; height: 20px; background: #000000; }
+.flag-orange { width: 80px; height: 20px; background: #ff8c00; }
+
+.govt-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ecf0f1;
+}
+
+.govt-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #bdc3c7;
+}
+
+.center-info {
+    margin: 25px 0;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
+
+.center-info h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.mission-text {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.mission-text p {
+    margin: 8px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .motto {
+        font-size: 1.2rem;
+    }
+    
+    .govt-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* VisionMission.css */
+
+.vision-mission-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  gap: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.vision-mission-box {
+  flex: 1;
+  background-color: #f4f8fb;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.vision-mission-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.vision-mission-box h1 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.vision-mission-box p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+

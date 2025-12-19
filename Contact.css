@@ -1,0 +1,142 @@
+/* Contact.css */
+
+.contact-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.contact-container h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.contact-container p {
+  color: #555;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  border-left: 4px solid #3498db;
+  padding: 15px 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card p:first-child {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.contact-location {
+  margin-top: 20px;
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+.govt-section {
+    background: #2c3e50;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 40px;
+    text-align: center;
+}
+
+.govt-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.zambia-flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flag-colors {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.flag-green { width: 80px; height: 20px; background: #047c36; }
+.flag-red { width: 80px; height: 20px; background: #de2010; }
+.flag-black { width: 80px; height: 20px; background: #000000; }
+.flag-orange { width: 80px; height: 20px; background: #ff8c00; }
+
+.govt-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ecf0f1;
+}
+
+.govt-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #bdc3c7;
+}
+
+.center-info {
+    margin: 25px 0;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
+
+.center-info h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.mission-text {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.mission-text p {
+    margin: 8px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .motto {
+        font-size: 1.2rem;
+    }
+    
+    .govt-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
